@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Comverter</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav id="mynav">
+        <div class="logo">
+            <p>Text-Access</p>
+        </div>
+        <div class="menu">
+            <div class="menu-item">Theme</div>
+            <div class="menu-item" onclick="lighttheme()"><i class="fa fa-sun-o"></i></div>
+            <div class="menu-item" onclick="darktheme()"><i class="fa fa-moon-o"></i></div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- input textarea start -->
+    <div class="container">
+        <div class="box1">
+            <div>
+                <textarea name="input" id="tinp" class="textinp" placeholder="write your sentence here"></textarea>
+            </div>
+            <!-- input textarea end -->
+
+        </div>
+
+
+        <!-- button collection start-->
+        <div class="box2">
+            <div class="buttons">
+                <div class="b1">
+                    <div><button type="button" onclick="lowerCase()">lower case</button></div>
+                    <div><button type="button" onclick="upperCase()">UPPER CASE</button></div>
+                    <div><button type="button" onclick="copyToClip()">Copy to Clipboard</button></div>
+                    <div><button type="button" onclick="boldCase()">Bold Case</button></div>
+                </div>
+
+                <div class="b1">
+                    <div><button type="button" onclick="titleCase()">Title Case</button></div>
+                    <div><button type="button" onclick="charcount()">Character count</button></div>
+                    <div><button type="button" onclick="wordcount()">Word count</button></div>
+                    <div><button type="button" onclick="reverseCase()">Reverse Case</button></div>
+                </div>
+
+                <div class="b2">
+                    <div><button type="button" onclick="clearTxt()">Clear</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- button end -->
+
+    </div>
+
+    <!-- description boxes -->
+    <div class="desc">
+        <div class="desc-input">
+            <div class="title">Lower Case</div>
+            <div class="content">
+                <p class="c">In simple terms, lowercase represents the letters of the words written in small alphabets.
+                    To convert
+                    uppercase to lowercase, just click the “lowercase” button given on this text converter.</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Upper Case</div>
+            <div class="content">
+                <p class="c">As opposed to lowercase, the letters of the words written in all caps are the written
+                    representation
+                    of uppercase. Uppercase letters are used for titles or to highlight key information. With a single
+                    click on the “UPPERCASE” button, you can easily convert case of the text from lowercase to uppercase
+                    .</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Copy to Clipboard</div>
+            <div class="content">
+                <p class="c">The clipboard is a location on a computer, phone, or tablet memory that
+                    temporarily stores cut or copied text or other data. Once something is stored in the clipboard, it
+                    can be pasted to a new location as much as needed. The clipboard holds its information until you cut
+                    or copy something.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc">
+        <div class="desc-input">
+            <div class="title">Title Case</div>
+            <div class="content">
+                <p class="c">Title case, transforms the first alphabet of each
+                    word in a phrase or sentence into capital. The title case is used to write the email subject,
+                    article heading, and the title of the text. For using this case, simply click the “Title Case”
+                    button given on this title capitalization tool.</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Character Count</div>
+            <div class="content">
+                <p class="c">Character Count Online is a free online character and word counting tool.
+                    All results are immediately shown and it is ridiculously easy to use and of course, the service is
+                    completely free.</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Word Count</div>
+            <div class="content">
+                <p class="c">A word count is a numerical count of the number of words in a document, file, or string of
+                    text.
+                    Below are different methods on how to get a word count on a computer.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="desc">
+        <div class="desc-input">
+            <div class="title">Bold Case</div>
+            <div class="content">
+                <p class="c">Bold is a heavy kind of writing. The characters are thicker than normal, We use bold for
+                    emphasis,
+                    when we want to make sure that our reader sees and takes in certain words.</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Reverse Case</div>
+            <div class="content">
+                <p class="c">World's simplest browser-based utility for inverting letter case in text. Load your text in
+                    the input
+                    form on the left and you'll instantly get back an inverted case version in the output area.</p>
+            </div>
+        </div>
+        <div class="desc-input">
+            <div class="title">Clear</div>
+            <div class="content">
+                <p class="c">Clear will help to clean the textarea for the next sentence you want to write</p>
+            </div>
+        </div>
+    </div>
+    <!-- description box end -->
+
+
+    <!-- footer start -->
+    <footer id="myfoot">
+        <div class="footer-box">
+            <!-- <div class="icon-box"> -->
+            <div class="line">
+                <div class="icon-box"><i class="fa fa-map-marker"></i></div>
+                <div>
+                    <p class="foot-title" style="font-weight: bold;">A-36, K.S. Nagar Nangloi</p>
+                    <p class="foot-title">New, Delhi-41</p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="icon-box"><i class="fa fa-phone"></i></div>
+                <div>
+                    <p class="foot-title" style="font-weight: bold;">+91 9354448265</p>
+                </div>
+            </div>
+            <div class="line">
+                <div class="icon-box"><i class="fa fa-envelope"></i></div>
+                <p class="foot-title"><a href="mailto: sbrutikumari@gmail.com">sbrutikumari@gmail.com</a></p>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="footer-box">
+            <div class="line">
+                <p class="foot-title" style="font-weight: bold;">About the Text-Access</p>
+            </div>
+            <div class="line">
+                <p class="foot-title">Text-Access is an online platform that is full of text tools and you can
+                    easily convert your text in different formats and also can check the number of total words and
+                    characters</p>
+            </div>
+            <div class="icon-horizontal">
+                <div class="icon-hori-gap">
+                    <a href="#">
+                        <div class="icon-box"><i class="fa fa-facebook"></i></div>
+                    </a>
+                </div>
+                <div class="icon-hori-gap">
+                    <a href="#">
+                        <div class="icon-box"><i class="fa fa-youtube"></i></div>
+                    </a>
+                </div>
+                <div class="icon-hori-gap">
+                    <a href="#">
+                        <div class="icon-box"><i class="fa fa-linkedin"></i></div>
+                    </a>
+                </div>
+                <div class="icon-hori-gap">
+                    <a href="#">
+                        <div class="icon-box"><i class="fa fa-instagram"></i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/text.js"></script>
+</body>
+
+</html>
